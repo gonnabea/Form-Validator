@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Form-Validator</title>
 </head>
 <body>
     <section class="background">
         <section class="form_container">
         <div class="form_title">Register With Us</div>
         <form class="form_main" action="">
-            <div>
+            <div class="input_container">
                 <div class="input_title">Username</div>
-                <input type="text" name="username" placeholder="Enter username">
+                <input type="text" class="input_area" name="username" placeholder="Enter username">
             </div>
-            <div>
+            <div class="input_container">
                 <div class="input_title">Email</div>
-                <input type="text" name="email" placeholder="Enter email">
+                <input type="text" class="input_area" name="email" placeholder="Enter email">
             </div>
-            <div>
+            <div class="input_container">
                 <div class="input_title">Password</div>
-                <input type="text" name="password" placeholder="Enter password">
+                <input type="text" class="input_area" name="password" placeholder="Enter password">
             </div>
-            <div>
+            <div class="input_container">
                 <div class="input_title">Confirm Password</div>
-                <input type="text" name="password2" placeholder="Enter password again">
+                <input type="text" class="input_area" name="password2" placeholder="Enter password again">
             </div>
-            <input type="submit" value="Submit">
+            <div class="submit_container">
+                <input type="submit" class="submit_btn" value="Submit">
+            </div>
         </form>
         </section>
         
