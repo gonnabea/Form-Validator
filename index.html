@@ -10,22 +10,26 @@
     <section class="background">
         <section class="form_container">
         <div class="form_title">Register With Us</div>
-        <form class="form_main" action="">
-            <div class="input_container">
+        <form class="form_main" id="formSubmit" action="">
+            <div class="input_container" id="nameContainer">
                 <div class="input_title">Username</div>
-                <input type="text" class="input_area" name="username" placeholder="Enter username">
+                <input type="text" id="username" class="input_area" name="username" placeholder="Enter username">
+                <div class="condition" id="nameMsg"></div>
             </div>
             <div class="input_container">
                 <div class="input_title">Email</div>
-                <input type="text" class="input_area" name="email" placeholder="Enter email">
+                <input type="email" class="input_area" name="email" id="email" placeholder="Enter email">
+                <div class="condition" id="emailMsg"></div>
             </div>
             <div class="input_container">
                 <div class="input_title">Password</div>
-                <input type="text" class="input_area" name="password" placeholder="Enter password">
+                <input type="password" class="input_area" id="password" name="password" placeholder="Enter password">
+                <div class="condition" id="passwordMsg"></div>
             </div>
             <div class="input_container">
                 <div class="input_title">Confirm Password</div>
-                <input type="text" class="input_area" name="password2" placeholder="Enter password again">
+                <input type="password" class="input_area" id="password2" name="password2" placeholder="Enter password again">
+                <div class="condition" id="passwordMsg2"></div>
             </div>
             <div class="submit_container">
                 <input type="submit" class="submit_btn" value="Submit">
@@ -34,5 +38,6 @@
         </section>
         
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
