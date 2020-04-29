@@ -33,9 +33,18 @@ function checkUsername(name){
     }
 }
 
-function emailValidation(email){
-    const atSign = /@/;
-    console.log(email.match(atSign))
+function emailValidation(emailArg){
+    const validation = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+    console.log(emailArg.match(validation))
+    if(emailArg.match(validation) === null){
+        email.style.border = "solid 2px red";
+        emailMsg.innerHTML = "Email is not valid";
+        email.style.outline = "none";
+    }else{
+        email.style.border = "solid 2px #2ECC71";
+        emailMsg.innerHTML = "";
+        email.style.outline = "none";
+    }
 }
 
 function checkPassword(passwordArg){
