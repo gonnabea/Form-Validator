@@ -34,7 +34,7 @@ function checkUsername(name){
 }
 
 function emailValidation(emailArg){
-    const validation = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+    const validation = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/; // 이메일 양식 regex
     console.log(emailArg.match(validation))
     if(emailArg.match(validation) === null){
         email.style.border = "solid 2px red";
